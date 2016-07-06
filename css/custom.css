@@ -2,6 +2,6 @@ body .upcoming-events li .event-date {
     opacity: 1;
 }
 
-.posts-listing.no-border img.img-thumbnail {
+.no-border img.img-thumbnail {
     border: none;
 }
