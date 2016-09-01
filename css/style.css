@@ -129,6 +129,7 @@ img, object, embed, audio, video {
 }
 img {
 	height: auto;
+	text-align: right;
 }
 strong, .strong {
   	font-weight: 700;
