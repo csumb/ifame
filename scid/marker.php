@@ -198,7 +198,7 @@ ORDER BY latitude DESC
 													if($area_info['media_type'] == 1){
 													
 	                                         echo '[\'' . $area_info['media_type'] . '\', ' . $area_info['latitude'] . ', ' . $area_info['longitude'] . ', ' . $total . ', ';
-								 echo '\'<div id=\"infopic\">' . $area_info['title'] .'<br />' . $area_info['subtitle'] .'<br /><img src="' . 'http://sep.csumb.edu/ifame/scid/images/';
+								 echo '\'<div id=\"infopic\">' . $area_info['title'] .'<br />' . $area_info['subtitle'] .'<br /><img src="' . 'http://ifame.csumb.edu/scid/images/';
 									echo $area_info['image_directory'] . '/' . $area_info['media_link'] . '" width="320px" height="240px"></img></div>\', ' . $area_info['media_type'] . ', ' . $area_info['instrument_id'] . ']' ;
 										
 										
@@ -212,7 +212,7 @@ ORDER BY latitude DESC
 											 
 											 echo $area_info['title'] .'<br />' . $area_info['subtitle'] .'<br /><iframe title="YouTube video player" width="280" height="240" src="http://www.youtube.com/embed/' . $area_info['media_link'] . '?rel=0" frameborder="0" allowfullscreen></iframe>';
 											 
-											 //echo '<img src="' . 'http://sep.csumb.edu/ifame/scid/images/';
+											 //echo '<img src="' . 'http://ifame.csumb.edu/scid/images/';
 											 //echo $area_info['image_directory'] . '/' . $area_info['media_link'] . '" width="320px" height="240px" />';
 											 
 											 
@@ -335,12 +335,12 @@ function HomeControl(controlDiv, map) {
 
   // Setup the click event listeners: simply set the map to Chicago
   google.maps.event.addDomListener(controlUI, 'click', function() {
-	   fb.start( 'http://sep.csumb.edu/ifame/testing/instructions.html', 'width:450px height:450px autoStart:once controlsPos:tr' );
+	   fb.start( 'http://ifame.csumb.edu/testing/instructions.html', 'width:450px height:450px autoStart:once controlsPos:tr' );
 	  //fb.start( 'http://omahanightlife.com/images/1/media/2009/05/07/pineapple.jpg' );
     //map.setCenter(chicago)
   });
     google.maps.event.addDomListener(controlUI, 'DOMNodeInserted', function() {
-	   fb.start( 'http://sep.csumb.edu/ifame/testing/instructions.html', 'width:450px height:450px autoStart:once controlsPos:tr' );
+	   fb.start( 'http://ifame.csumb.edu/testing/instructions.html', 'width:450px height:450px autoStart:once controlsPos:tr' );
 	  //fb.start( 'http://omahanightlife.com/images/1/media/2009/05/07/pineapple.jpg' );
     //map.setCenter(chicago)
   });
@@ -969,7 +969,7 @@ function markerme() {
 <div style="position:fixed; bottom:24px; right:15px; width:100px; height:138px; z-index:4;"><a href="http://www.sanctuarysimon.org/" target="_new" ><img src="scid_images/nms_logo_border.png" border="0" alt="National Marine Sanctuaries" /></a></div>
 
 <!--ifame Logo Bottom Right -->
-<div style="position:fixed; bottom:24px; right:130px; width:100px; height:138px; z-index:4;"><a href="http://sep.csumb.edu/ifame" target="_new" ><img src="scid_images/ifame_logo_link.png" border="0" alt="Institute for Applied Marine Ecology" /></a></div>
+<div style="position:fixed; bottom:24px; right:130px; width:100px; height:138px; z-index:4;"><a href="http://ifame.csumb.edu" target="_new" ><img src="scid_images/ifame_logo_link.png" border="0" alt="Institute for Applied Marine Ecology" /></a></div>
 
 <!-- SCID logo Bottom Left -->
 <div style="position:fixed; bottom:24px; left:15px; width:207px; height:138px; z-index:4;"><img src="scid_images/scid_logo_1.png" border="0" alt="Shelf Characterization and Image Display" /></div>
