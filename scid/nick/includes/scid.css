@@ -1,0 +1,100 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+
+
+
+body {
+	margin-top:0px;
+	/*height:500px;
+	padding-bottom:10px;
+	padding-top: 0px;*/
+	
+	background-repeat:no-repeat;
+	background-color:#000;
+
+}
+#container{
+	width:1024px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image:url(../images/scid_layout/scid_bg.jpg);
+	height:500px;
+}
+
+#left_body{
+	float:left;
+	width:850px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#01a9cd;
+	/*padding-top:20px;*/
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-bottom: 20px;
+}
+#right_nav{
+	float:right;
+	width:140px;
+	text-align:center;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:18px;
+	color:#01a9cd;
+}
+#right_nav a{
+	font-size: 18px;
+	color:#01a9cd;
+	padding-right: 15px;
+	padding-bottom: 5px;
+}
+#right_nav a:hover {
+	color:#FFF;
+}
+
+
+#title_text{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:20px;
+	color:#01a9cd;
+}
+
+#body_image{
+	float:right;
+	clear:both;
+	border: 1px solid #FFF;
+	margin-left:20px;
+	margin-right:10px;
+	margin-bottom:14px;
+	
+}
+
+#header {
+	height: 68px;
+	padding-bottom: 0px;
+}
+#sub_header {
+	background-image:url(../images/scid_layout/scid_sub_header.png);
+	background-repeat:no-repeat;
+	height: 25px;
+	padding-bottom: 25px;
+}
+
+
+#footer {
+	font-family:Arial, Helvetica, sans-serif;
+	margin-top:20px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	width:700px;
+	color:#FFF;
+	font-size: 12px;
+}
+#note {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#01a9cd;
+}
+

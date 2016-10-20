@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html dir="ltr">
+    
+    <head>
+        <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/dojo/1.4/dijit/themes/tundra/tundra.css"
+        />
+        <style type="text/css">
+            body, html { font-family:helvetica,arial,sans-serif; font-size:90%; }
+        </style>
+    </head>
+    
+    <body class=" tundra ">
+        <div dojoType="dijit._Widget" style="display:none;">
+            <script type="dojo/method" event="postCreate">
+                // create dijit.form.Select as a simple wrapper to dojox.form.DropDownSelect for Dojo < 1.4 if(!dijit.form.Select){ dojo.declare("dijit.form.Select", dojox.form.DropDownSelect, {}); } 
+                
+            </script>
+        </div>
+        <select jsId="s3" name="s3" id="s3" style="width: 150px;" dojoType="dijit.form.Select">
+            <option value="TN">
+                Tennessee
+            </option>
+            <option value="VA" selected="selected">
+                Virginia
+            </option>
+            <option value="WA">
+                Washington
+            </option>
+            <option value="FL">
+                This is the place Florida
+            </option>
+            <option value="CA">
+                Monterey California
+            </option>
+        </select>
+    </body>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/dojo/1.4/dojo/dojo.xd.js"
+    djConfig="parseOnLoad: true">
+    </script>
+    <script>
+        if (dojo.version.toString() < "1.4") {
+            dojo.require("dojox.form.DropDownSelect");
+        } else {
+            dojo.require("dijit.form.Select");
+        }
+    </script>
+    <!-- NOTE: the following script tag is not intended for usage in real
+    world!! it is part of the CodeGlass and you should just remove it when
+    you use the code -->
+    <script type="text/javascript">
+        dojo.addOnLoad(function() {
+            if (document.pub) {
+                document.pub();
+            }
+        });
+    </script>
+
+</html>

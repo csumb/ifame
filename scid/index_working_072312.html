@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>SCID - Shelf Characterization and Image Display - Explore. Locate. Identify.</title>
+<link rel="shortcut icon" href="images/scid_layout/ifame_logo.ico" type="image/x-icon" /> 
+
+<link type="text/css" rel="stylesheet" href="http://sep.csumb.edu/ifame/scid/floatbox/floatbox.css" />
+<script type="text/javascript" src="http://sep.csumb.edu/ifame/scid/floatbox/floatbox.js"></script>
+
+<style type="text/css">
+
+/*
+#container {
+	background-color:#000;
+	width:100%;
+	height:100%;
+	background-image:url(images/SCID_Background.jpg);
+}
+*/
+
+
+img.bg {
+                        /* Set rules to fill background */
+                        min-height: 100%;
+                        min-width: 1024px;
+                        
+                        /* Set up proportionate scaling */
+                        width: 100%;
+                        height: auto;
+                        
+                        /* Set up positioning */
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                }
+                
+                @media screen and (max-width: 1024px){
+                        img.bg {
+                                left: 50%;
+                                margin-left: -512px; }
+                }
+                
+				
+#header { position: relative; 
+		  text-align:center;
+          z-index: 2; 
+          width: 100%; 
+		  height:68px;
+		  margin: 10px auto; 
+		  padding-bottom: 10px; 
+		  background:none; 
+		  background: no-repeat;
+		  }
+                p { font: 15px/2 Georgia, Serif; margin: 0 0 30px 0; text-indent: 40px; }
+
+
+#explore{
+	 position: absolute;
+		z-index: 2;
+		display:block;
+		text-align:center;
+		background-image:url(images/explore.png);
+		height:30px;
+		
+		width:100%;
+		margin-left:-200;
+		margin-right:200;
+		left:0;
+		padding-top:4px;
+		
+		
+		/*
+		width:100%;
+		height:50px;
+margin-left:-20px;
+margin-right:20px;
+		text-align:center;
+		font-size:24px;
+		font:Arial, Helvetica, sans-serif;
+		color:#000;	
+		background-image:url(images/bg_1x1t.png);
+		background-repeat:repeat;
+		*/
+}
+
+#img.explore {
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+
+#map {
+		position:relative;
+		text-align:center;
+		z-index: 2;
+		display:block;
+		background-image:url(images/map.png);
+		width:400px;
+		height:400px;
+		margin-left:auto;
+		margin-right:auto;
+		top:50px;
+	
+		
+}
+#text {
+	padding-top:20px;
+}
+
+#button{
+	float:right;	
+}
+
+#ifame_logo {
+	position:relative;
+	z-index:4;
+	margin-left:420px;
+	margin-top: -50px;	
+
+}
+#nms_logo {
+	position:relative;
+	z-index:4;
+	margin-left:420px;
+	padding-top: 20px;
+		
+}
+
+
+#footer{
+	position:relative;
+	z-index: 2;
+	text-align:center;
+	font:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#FFC;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:60px;
+}
+
+
+
+</style>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6090545-7']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+
+
+<div id="header" >
+<img src="images/scid_header.png" />
+</div>
+
+<div id="explore">
+<img src="images/explore_header.png" class="explore" />
+</div>
+
+<div id="map">
+	<div id="text" ><img src="images/text.png" class="text" /></div>
+
+	<div id="button"><a href="http://sep.csumb.edu/ifame/scid/marker.php" class="floatbox" data-fb-options="width:98% height:100% scrolling:no controlsPos:tr"><img src=				"images/start_button.png" alt="start SCID" border="0"/></a>
+    <br />
+    <a href="learn.html" class="floatbox" data-fb-options="width:50% height:50% scrolling:yes controlsPos:tr"><img src="images/learn_button.png" alt="start SCID" border="0"/></a> </div>
+    
+    
+    <div id="ifame_logo"> <a href="http://sep.csumb.edu/ifame/"><img src="images/ifame_logo.png" alt="Ifame Logo" border="0" class="ifame_logo" /></a></div>
+    <div id="nms_logo"> <a href="http://montereybay.noaa.gov/"><img src="images/nms_logo.png" alt="Ifame Logo" border="0" /></a></div>
+    
+    
+	</div>
+    
+
+<div id="footer" >
+<font style="font-family:Arial, Helvetica, sans-serif"> Background image courtesy IMPACT 2008</font>
+</div>
+
+
+
+<img src="images/SCID_Background.jpg" class="bg">
+
+
+
+
+</body>
+</html>
